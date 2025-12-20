@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.tailoredsweep.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Oct 2025 10:51:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailored Sweep - Professional Cleaning Services in Perth, Australia</title>
+
+    <link rel="icon" type="image/x-icon" href="contents/images/icon.svg">
+
+    <!-- Preload the LCP image -->
+    <link rel="preload" as="image" href="contents/images/cleaninggirl.webp" type="image/webp" fetchpriority="high">
+
+    <!-- poppins font class from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+
+
+    <!-- owl carousel css files -->
+    <!-- <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css"> -->
+
+    <!-- home page style css file -->
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- <link rel="stylesheet" href="projects/sydneybuilds.com/styles/home.css"> -->
+    <!-- <link rel="stylesheet" href="styles/home2.css"> -->
+    <!-- <link rel="stylesheet" href="styles/home3.css"> -->
+    <!-- <link rel="stylesheet" href="styles/home4.css"> -->
+
+    <link rel="stylesheet" href="styles/home5.css">
+    <!-- <link rel="stylesheet" href="styles/popup2.css"> -->
+
+
+
+
+
+<style>
+
+
+
+
+  .section-item-side-com-img-list-item {
+    width: 100%;
+    padding-top: 50%; /* Aspect ratio - adjust as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .img-bna-div-label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    user-select: none;
+  }
+
+
+.img-bna-div-container {
+  position: relative;
+  height: 480px; /* Adjust based on image height */
+  overflow: hidden;
+}
+
+.img-bna-pair {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  opacity: 0;
+  transform: translateY(-20px); /* start slightly above */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.img-bna-pair.active {
+  opacity: 1;
+  transform: translateY(0); /* slide down into place */
+  pointer-events: auto;
+}
+
+
+
+#form-error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+}
+
+#contact-section-success {
+    display: none;
+    color: #51ADE5;
+    margin-top: 10px;
+}
+ 	
+        /* :root {
+            --navbar-height: 85px;
+            --title-highlight-color: #51ADE5;
+            --dark-blue: #3871C1;
+            --light-blue: #51ADE5;
+            --light-green: #80CC28;
+        }
+        
+        body {
+            margin: 0!important;
+            font-family: "Sora", sans-serif;
+        }
+        
+        html {
+            scroll-behavior: auto !important;
+        }
+        
+        .row {
+            margin: 0;
+        }
+        
+        .container-fluid {
+            padding: 0;
+        }
+        
+        input[type='text'],
+        input[type='email'],
+        textarea {
+            font-size: 16px!important;
+        }
+        
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: revert;
+            margin-bottom: revert;
+            font-weight: revert;
+            line-height: revert;
+            font-size: revert;
+        }
+        
+        b,
+        strong {
+            font-weight: revert;
+        }
+        
+        img {
+            user-drag: none;
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        } */
+		
+		
+		
+		
+/* --- Testimonials Carousel Styling --- */
+
+.main-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center; /* centers the two boxes horizontally */
+  gap: 20px; /* space between the boxes */
+  flex-wrap: nowrap; /* prevent stacking, keep side by side */
+}
+
+.testimonial-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  flex: 0 0 48%; /* fixed width ~48% so two fit side by side */
+  border: 1px solid #ccc;
+  padding: 5px 5px 5px 20px;
+  box-sizing: border-box;
+  background: white;
+  overflow: hidden; /* hides text overflow */
+  height: 250px; /* ✅ fixed height for consistent layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.testimonial-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.testimonial-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* ✅ limit to 6 lines */
+  -webkit-box-orient: vertical;
+}
+
+.car-control-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.car-control-btn {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+transition: background 0.3s, color 0.3s; /* added color transition */
+  font-size: 20px;
+  cursor: pointer;
+  color: black !important; /* default arrow color */
+}
+
+.car-control-btn:hover {
+  background: #e0e0e0;
+   color: white !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 100%;
+    height: 350px; /* ✅ slightly taller for mobile */
+  }
+
+  .testimonial-wrapper {
+    gap: 20px;
+  }
+
+  .testimonial-text {
+    -webkit-line-clamp: 8; /* allow a bit more text on mobile */
+  }
+}
+
+
+		
+    </style>
+    <!-- Google tag (gtag.js) -->
+
+</head>
+
+
+<body>
+
+    <div class="nav-bar nav-bar-1" data-switched="0">
+        <div class="nav-bar-content">
+            <img id="dark-logo" class="action-btn navbar-navigate-link" data-scroll="nav-bar-top" data-page="index.html" src="contents/images/logowithtext.svg" alt="">
+			
+			<a href="#nav-bar-top">
+  <img id="light-logo" src="contents/images/logowithtextwhite.svg" alt="Tailored Sweep Logo" style="display:none;">
+</a>
+            <!--<img id="light-logo" class="action-btn navbar-navigate-link" data-scroll="nav-bar-top" src="contents/images/logowithtextwhite.svg" alt="">-->
+            <div class="nav-bar-left">
+                <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="services-section-item">Services</p>
+                <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="reviews-section-item">Reviews</p>
+                <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="faq-section-item">FAQ</p>
+                <!-- <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="projects-section-item">Projects</p> -->
+                <p class="action-btn navbar-navigate-link" data-page="about.html" data-scroll="">About us</p>
+                <p class="action-btn navbar-navigate-link" id="nav-bar-contact-us" data-page="index.html" data-scroll="contact-us-section-item">Contact us</p>
+            </div>
+
+            <div id="nav-bar-toggle-div">
+                <img src="contents/images/navbaricon.svg" alt="" id="nav-bar-toggle">
+                <img src="contents/images/navbariconwhite.svg" style="display: none;" alt="" id="nav-bar-toggle-white">
+            </div>
+        </div>
+    </div>
+
+    <div id="indipa"></div>
+    <div class="nav-bar-toggled">
+        <div class="nav-bar-toggled-items">
+            <h4>Main Sections</h4>
+            <div class="nav-bar-toggle-close-btn-div">
+                <div class="osc-btn">
+                    <div class="osc-btn-div">
+                        <button class="osc-btn-container" id="nav-bar-toggle-close" style="background-image: url('contents/images/navbarclose.svg');"></button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="services-section-item">Services</p>
+            <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="reviews-section-item">Reviews</p>
+            <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="faq-section-item">FAQ</p>
+            <!-- <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="projects-section-item">Projects</p> -->
+            <p class="action-btn navbar-navigate-link" data-page="about.html" data-scroll="">About us</p>
+            <p class="action-btn navbar-navigate-link" data-page="index.html" data-scroll="contact-us-section-item">Contact us</p>
+        </div>
+    </div>
+    <div class="header-section" id="nav-bar-top">
+        <div id="header-section-item-ext">
+            <div class="section-item-main" id="header-section-item">
+                <div class="main-section">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="header-section-item-desc">
+                            <div class="section-mid-item-contact">
+                                <div id="main-section-text-container">
+                                    <p class="main-section-heading section-heading">#1 cleaning services provider in perth</p>
+                                    <h1 class="main-section-title">We Provide <span>Top-Quality Cleaning Services</span> Across Perth</h1>
+                                    <p class="main-section-desc section-desc">We offer reliable cleaning services for residential and commercial spaces in Perth, keeping every area fresh, organized and well-maintained.</p>
+                                    <button class="contact-us-action-btn action-btn action-btn-hover" id="main-section-btn" data-scroll="contact-us-section-item">Get a Quote Now</button>
+                                    <!-- <button class="contact-us-action-btn action-btn-hover" id="main-section-btn-2">Get a Quote Now</button> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 main-section-img-col" id="main-img-col">
+                            <img src="contents/images/cleaninggirl.webp" class="main-section-img-img" id="main-img" alt="Cleaning Girl with a Cleaning Liquid in her hand." srcset="">
+                            <div id="main-img-mobile-container">
+                                <!-- <img src="contents/images/header-bg-side-mobile.png" id="main-img-mobile" alt="" srcset=""> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hrr"></div>
+	
+
+
+
+
+
+
+
+
+
+<div class="section-item-main" id="desc-with-side-img-1">
+  <div class="main-section">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <p class="section-heading">deep cleaning</p>
+        <h3 class="section-title"><span>Thorough Deep Cleaning </span> to Refresh Your Entire Home</h3>
+
+        <p class="section-desc">Deep cleaning services are perfect for move-in or move-out cleans, spring cleaning, or simply when you need a more thorough clean than your regular house cleaning service provides. It targets hidden dirt, grime, and built-up dust in every corner.</p>
+
+        <p class="section-desc">Our team deep cleans kitchens, bathrooms, floors, and hard-to-reach areas, ensuring a spotless home. This service removes stubborn stains, sanitizes surfaces, and improves indoor air quality. Ideal for refreshing your space, it leaves your home looking and feeling brand new.</p>
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="section-tab-side-comp-img">
+          <div class="img-bna-div-container" data-total-pairs="4">
+
+            <!-- Pair 1 -->
+            <div class="img-bna-pair active" id="pair-1">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/1. TB1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/1. TB1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Pair 2 -->
+            <div class="img-bna-pair" id="pair-2">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/2. Toilet2 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/2. Toilet2 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Pair 3 -->
+            <div class="img-bna-pair" id="pair-3">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/3. filter1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/3. filter1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Pair 4 -->
+            <div class="img-bna-pair" id="pair-4">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/4. ex1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/4. ex1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+  const totalPairs = 4;
+  let currentPairIndex = 1;
+
+  function showPair(index) {
+    for (let i = 1; i <= totalPairs; i++) {
+      const pair = document.getElementById(`pair-${i}`);
+      if (i === index) {
+        pair.classList.add('active');
+      } else {
+        pair.classList.remove('active');
+      }
+    }
+  }
+
+  // Rotate pairs every 3 seconds
+  setInterval(() => {
+    currentPairIndex++;
+    if (currentPairIndex > totalPairs) currentPairIndex = 1;
+    showPair(currentPairIndex);
+  }, 3000);
+</script>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   <!--<div class="section-item-main" id="desc-with-side-img-1">
+        <div class="main-section">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <p class="section-heading">deep cleaning</p>
+                    <h3 class="section-title"><span>Thorough Deep Cleaning </span> to Refresh Your Entire Home</h3>
+
+                    <p class="section-desc">Deep cleaning services are perfect for move-in or move-out cleans, spring cleaning, or simply when you need a more thorough clean than your regular house cleaning service provides. It targets hidden dirt, grime, and built-up dust in
+                        every corner.</p>
+
+                    <p class="section-desc">Our team deep cleans kitchens, bathrooms, floors, and hard-to-reach areas, ensuring a spotless home. This service removes stubborn stains, sanitizes surfaces, and improves indoor air quality. Ideal for refreshing your space, it leaves
+                        your home looking and feeling brand new.
+                    </p>
+
+                    <!-- <p class="section-desc">With regular mowing, we ensure your lawn stays in top condition, providing a fresh and inviting atmosphere for your home. Whether for curb appeal or outdoor enjoyment, our reliable and efficient service guarantees a beautiful, well-maintained
+                        lawn year-round with minimal effort.
+                    </p> -->
+                </div>
+				
+
+
+
+
+				
+				
+                <!--<div class="col-lg-6">
+                    <div class="section-tab-side-comp-img">
+                        <div class="img-bna-div-container" data-total-pairs="4">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-6 col-sm-6 section-item-side-comp-img-item section-item-side-comp-img-item-left section-item-side-com-img-list-item-before img-bna-div img-bna-1">
+                                    <div class="section-item-side-com-img-list-item" id="img-bna-2-1" style="background-image: url('https://www.ventoras.com/ventoras-clients-login/uploads/beforeafter/tailoredsweep.com/1/1/1.webp');">
+                                        <p class="img-bna-div-label">Before</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-6 col-sm-6 section-item-side-comp-img-item section-item-side-comp-img-item-right section-item-side-com-img-list-item-after img-bna-div img-bna-2">
+                                    <div class="section-item-side-com-img-list-item" id="img-bna-2-2" style="background-image: url('https://www.ventoras.com/ventoras-clients-login/uploads/beforeafter/tailoredsweep.com/1/1/2.webp');">
+                                        <p class="img-bna-div-label">After</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	<script>
+    function updateBackgroundImage(selector) {
+        let element = document.querySelector(selector);
+        if (element) {
+            let style = window.getComputedStyle(element);
+            let backgroundImage = style.backgroundImage;
+
+            let match = backgroundImage.match(/url\("(.*?)"\)/);
+            if (match) {
+                let url = match[1];
+                let timestamp = new Date().getTime();
+
+                // Remove existing timestamp if present
+                url = url.replace(/\?t=\d+/, "");
+
+                let newUrl = url.includes("?") ? `${url}&t=${timestamp}` : `${url}?t=${timestamp}`;
+                element.style.backgroundImage = `url('${newUrl}')`;
+            }
+
+            element.style.height = "100%";
+        }
+    }
+
+    updateBackgroundImage("#img-bna-2-1");
+    updateBackgroundImage("#img-bna-2-2");
+</script>-->
+
+
+    <!--<script>
+        function updateBackgroundImage(selector) {
+            let element = document.querySelector(selector);
+            if (element) {
+                let style = window.getComputedStyle(element);
+                let backgroundImage = style.backgroundImage;
+
+                let match = backgroundImage.match(/url\("(.*?)"\)/);
+                if (match) {
+                    let url = match[1];
+                    let timestamp = new Date().getTime();
+
+                    // Remove existing timestamp if present
+                    url = url.replace(/\?t=\d+/, "");
+
+                    let newUrl = url.includes("?") ? `${url}&t=${timestamp}` : `${url}?t=${timestamp}`;
+                    element.style.backgroundImage = `url('%24%7bnewUrl%7d.html')`;
+                }
+
+                element.style.height = "100%";
+            }
+        }
+
+        updateBackgroundImage("#img-bna-2-1");
+        updateBackgroundImage("#img-bna-2-2");
+    </script>-->
+
+    <div class="hrr"></div>
+    <div class="section-item-main section-item-main-center" id="why-choose-us-section-item">
+        <div class="main-section wp-section">
+            <p class="section-sub-title section-heading text-center">why choose us</p>
+            <h2 class="section-title section-title-center text-center">The Trusted Advantage for <span>Exceptional and Reliable Service</span> Excellence</h2>
+
+            <p class="section-desc text-center">We're more than just cleaners—we're committed to creating fresh, inviting spaces with care and passion. Every job is done with a personal touch, ensuring quality results you can trust. We build strong relationships with our clients, understanding
+                their unique needs to provide a truly exceptional cleaning experience.
+            </p>
+
+            <div class="why-choose-us-section-table">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6">
+
+                            <div class="num-item-cell wp-cell pad-left-none">
+                                <div class="num-item-cell-div">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="num-item-cell-img">
+                                                <div class="full-width-container-text section-mid-item-contact">
+                                                    <div>
+                                                        <img src="projects/sydneybuilds.com/contents/images/engineer.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="num-item-cell-top-sec">
+                                                <h4 class="num-item-cell-top-sec-number">01</h4>
+                                                <div class="osc-btn">
+                                                    <div class="osc-btn-div">
+                                                        <button class="osc-btn-container" style="background-image: url('projects/sydneybuilds.com/contents/images/engineer.svg');"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="num-item-cell-desc-container">
+                                                <h2 class="num-item-cell-title">Friendly & Customer Oriented</h2>
+                                                <p class="num-item-cell-desc">We prioritize customer satisfaction, providing a welcoming experience every time. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+
+                            <div class="num-item-cell wp-cell pad-left-none">
+                                <div class="num-item-cell-div">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="num-item-cell-img">
+                                                <div class="full-width-container-text section-mid-item-contact">
+                                                    <div>
+                                                        <img src="contents/images/attention.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="num-item-cell-top-sec">
+                                                <h4 class="num-item-cell-top-sec-number">02</h4>
+                                                <div class="osc-btn">
+                                                    <div class="osc-btn-div">
+                                                        <button class="osc-btn-container" style="background-image: url('contents/images/attention.svg');"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="num-item-cell-desc-container">
+                                                <h2 class="num-item-cell-title">Attention to Detail</h2>
+                                                <p class="num-item-cell-desc">We focus on the little things, ensuring a spotless and thoroughly cleaned space.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+
+                            <div class="num-item-cell wp-cell pad-left-none">
+                                <div class="num-item-cell-div">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="num-item-cell-img">
+                                                <div class="full-width-container-text section-mid-item-contact">
+                                                    <div>
+                                                        <img src="contents/images/time.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="num-item-cell-top-sec">
+                                                <h4 class="num-item-cell-top-sec-number">03</h4>
+                                                <div class="osc-btn">
+                                                    <div class="osc-btn-div">
+                                                        <button class="osc-btn-container" style="background-image: url('contents/images/time.svg');"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="num-item-cell-desc-container">
+                                                <h2 class="num-item-cell-title">Flexible & Customizable Services</h2>
+                                                <p class="num-item-cell-desc">Our cleaning services adapt to your schedule and specific needs for ultimate convenience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+
+                            <div class="num-item-cell wp-cell pad-left-none">
+                                <div class="num-item-cell-div">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="num-item-cell-img">
+                                                <div class="full-width-container-text section-mid-item-contact">
+                                                    <div>
+                                                        <img src="contents/images/price.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="num-item-cell-top-sec">
+                                                <h4 class="num-item-cell-top-sec-number">04</h4>
+                                                <div class="osc-btn">
+                                                    <div class="osc-btn-div">
+                                                        <button class="osc-btn-container" style="background-image: url('contents/images/price.png');"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="num-item-cell-desc-container">
+                                                <h2 class="num-item-cell-title">Fair Pricing for Services</h2>
+                                                <p class="num-item-cell-desc">Our pricing is designed around your cleaning needs, offering flexibility and great value for your money.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hrr"></div>
+	
+<div class="section-item-main" id="desc-with-side-img-2">
+  <div class="main-section">
+    <div class="row">
+
+      <!-- Left Column: Text -->
+      <div class="col-lg-6">
+        <p class="section-heading">regular house cleaning</p>
+        <h3 class="section-title"><span>Regular House Cleaning</span> to Keep your Home Fresh</h3>
+
+        <p class="section-desc">
+          Our regular cleaning services include cleaning the kitchen, bathrooms, laundry area, living areas, and bedrooms. This option is ideal for busy families with children and pets who need regular cleaning to keep their home tidy.
+        </p>
+
+        <p class="section-desc">
+          Weekly cleaning helps maintain a hygienic environment by controlling dust, dirt, and pet hair. Regular cleaning prevents buildup, reduces allergens, and keeps your home fresh. Our team ensures a spotless space, giving you more time for what matters.
+        </p>
+      </div>
+
+      <!-- Right Column: Images -->
+      <div class="col-lg-6">
+        <div class="section-tab-side-comp-img">
+          <div class="img-bna-div-container" id="bottom-img-container" data-total-pairs="4">
+
+            <!-- Bottom Pair 1 -->
+            <div class="img-bna-pair active" id="bottom-pair-1">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/1. SG1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/1. SG1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Bottom Pair 2 -->
+            <div class="img-bna-pair" id="bottom-pair-2">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/2. shelf1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/2. shelf1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Bottom Pair 3 -->
+            <div class="img-bna-pair" id="bottom-pair-3">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/3. stove1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/3. stove1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+            <!-- Bottom Pair 4 -->
+            <div class="img-bna-pair" id="bottom-pair-4">
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/4. Toaster1 (1).jpg');">
+                <p class="img-bna-div-label">Before</p>
+              </div>
+              <div class="section-item-side-com-img-list-item" style="background-image: url('images/4. Toaster1 (2).jpg');">
+                <p class="img-bna-div-label">After</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+	
+	
+
+
+
+
+<script>
+  const bottomTotalPairs = 4;
+  let bottomCurrentPair = 1;
+
+  function showBottomPair(index) {
+    for (let i = 1; i <= bottomTotalPairs; i++) {
+      const pair = document.getElementById(`bottom-pair-${i}`);
+      if (i === index) {
+        pair.classList.add('active');
+      } else {
+        pair.classList.remove('active');
+      }
+    }
+  }
+
+  // Initialize first bottom pair
+  showBottomPair(bottomCurrentPair);
+
+  // Rotate bottom pairs every 3 seconds
+  setInterval(() => {
+    bottomCurrentPair++;
+    if (bottomCurrentPair > bottomTotalPairs) bottomCurrentPair = 1;
+    showBottomPair(bottomCurrentPair);
+  }, 3000);
+</script>
+
+
+
+
+
+                 <!--   <script>
+                        function updateBackgroundImage(selector) {
+                            let element = document.querySelector(selector);
+                            if (element) {
+                                let style = window.getComputedStyle(element);
+                                let backgroundImage = style.backgroundImage;
+
+                                let match = backgroundImage.match(/url\("(.*?)"\)/);
+                                if (match) {
+                                    let url = match[1];
+                                    let timestamp = new Date().getTime();
+
+                                    // Remove existing timestamp if present
+                                    url = url.replace(/\?t=\d+/, "");
+
+                                    let newUrl = url.includes("?") ? `${url}&t=${timestamp}` : `${url}?t=${timestamp}`;
+                                    element.style.backgroundImage = `url('%24%7bnewUrl%7d.html')`;
+                                }
+
+                                element.style.height = "100%";
+                            }
+                        }
+
+                        updateBackgroundImage("#img-bna-1-1");
+                        updateBackgroundImage("#img-bna-1-2");
+                    </script>-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="full-width-container" id="full-width-container-2">
+        <div class="section-item-main">
+            <div class="main-section">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+                        <div class="full-width-container-text section-mid-item-contact">
+                            <div>
+                                <h2 class="section-title full-width-container-title">Request a Quote Today!</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                        <div class="full-width-container-btn">
+                            <div class="osc-btn">
+                                <div>
+                                    <button class="section-mid-item-btn section-mid-item-btn-white navbar-navigate-link" data-page="index.html" data-scroll="contact-us-section-item">Get a free quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hrr"></div>
+
+    <div class="section-item-main" id="services-section-item">
+        <div class="main-section">
+            <p class="section-sub-title section-heading">services we provide</p>
+            <h2 class="section-title"><span>Comprehensive Cleaning Services</span> You Can Count On</h2>
+            <p class="section-desc">Committed to making your home, rental, or commercial space look its best with dependable, high-
+quality cleaning services you can trust.</p>
+
+            <div class="our-services-table">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">01</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">Regular House Maintenance</h2>
+                                    <p class="num-item-cell-desc">We provide routine cleaning to keep your home fresh, tidy, and comfortable, ensuring a consistently clean and inviting space.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">02</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">Deep Cleaning</h2>
+                                    <p class="num-item-cell-desc">Our deep cleaning service tackles built-up dirt and grime, reaching every corner for a refreshed, spotless, and hygienic home.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">03</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">Commercial Cleaning</h2>
+                                    <p class="num-item-cell-desc">We offer reliable cleaning for offices and businesses, maintaining a professional and welcoming environment for employees.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">04</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">Vacate Cleaning</h2>
+                                    <p class="num-item-cell-desc">Moving out? Our vacate cleaning ensures your space is left spotless, meeting landlord expectations for a smooth handover. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">05</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">End-of-Lease Cleaning</h2>
+                                    <p class="num-item-cell-desc">We provide thorough end-of-lease cleaning to help secure your bond refund and leave your rental property in perfect condition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="num-item-cell">
+                                <div class="num-item-cell-div">
+                                    <div class="num-item-cell-top-sec">
+                                        <h4 class="num-item-cell-top-sec-number">06</h4>
+                                        <!-- <div class="osc-btn">
+                                            <div class="osc-btn-div">
+                                                <button class="osc-btn-container"></button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <h2 class="num-item-cell-title">Oven Cleaning</h2>
+                                    <p class="num-item-cell-desc">Our oven cleaning service removes grease, grime, and burnt-on residue, leaving your oven spotless, fresh, and ready for your next meal.</p>
+                                </div>
+                            </div>
+                        </div>
+						
+						
+						
+						
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--
+    <div class="section-item-main" id="projects-section-item">
+        <div class="main-section">
+            <div class="main-section-title-inline">
+
+
+                <p class="section-sub-title section-heading">our projects</p>
+                <h2 class="section-title section-title section-title-inline">Spaces We've <span>Cleaned</span></h2>
+
+                <div class="car-control-btns">
+                    <button class="car-control-btn car-control-btn-prev" href="#carouselExampleIndicators3" role="button" data-bs-slide="prev"></button>
+                    <button class="car-control-btn car-control-btn-next" href="#carouselExampleIndicators3" role="button" data-bs-slide="next"></button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-interval="false">
+
+                        <div class="carousel-inner" id="projects-carousel-inner">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="hrr"></div> -->
+
+
+    <div class="hrr"></div>
+	
+<div class="section-item-main" id="reviews-section-item">
+  <div class="main-section">
+    <div class="main-section-title-inline">
+      <p class="section-sub-title section-heading">client feedback</p>
+      <h2 class="section-title section-title-inline">
+        Stories of <span>Satisfaction and Success</span>
+      </h2>
+
+      <div class="car-control-btns">
+        <button class="car-control-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          &#8592;
+        </button>
+        <button class="car-control-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          &#8594;
+        </button>
+      </div>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+
+        <!-- === SLIDE 1 === -->
+        <div class="carousel-item active">
+          <div class="testimonial-wrapper">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/SRaven.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                 <p> <span class="testimonial-name">Serena Ravenscroft</span><br>
+                  <span class="testimonial-date">Written on 17th September, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                We had our home cleaned by Tailored Sweeps yesterday, for the first time. What a marvelous job they did! I keep noticing things that amaze me. They were punctual, charming and super efficient! I’m looking forward to my next clean. I highly recommend this service.
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/LYoung.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                 <p> <span class="testimonial-name">Leandra Young</span><br>
+                  <span class="testimonial-date">Written on 1st September, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                Tailored Sweep Cleaning service have been great to deal with. Excellent communication, professional and punctual. But more than that provided an amazing service. Our house is the cleanest it has ever been. Their attention to detail was extraordinary. Can’t wait to have them back to help me keep on top of our cleaning 🙂
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- === SLIDE 2 === -->
+        <div class="carousel-item">
+          <div class="testimonial-wrapper">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/KStone.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                  <p> <span class="testimonial-name">Kendra Stone</span><br>
+                  <span class="testimonial-date">Written on 2nd May, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                Always a great clean from these ladies. I appreciate the extra little touches like folding the toilet paper or stacking things neatly. Appreciate your meticulous work 🙂
+              </p>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/LBird.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                  <p> <span class="testimonial-name">Lynn Bird</span><br>
+                  <span class="testimonial-date">Written on 28th March, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+                Awesome work! Very impressed with the cleaning service😀 cleaners!
+              </p>
+            </div>
+          </div>
+        </div>
+		
+		
+		
+		
+		
+		<!-- === SLIDE 3 === -->
+        <div class="carousel-item">
+          <div class="testimonial-wrapper">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/APort.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                 <p> <span class="testimonial-name">Alana Portluck</span><br>
+                  <span class="testimonial-date">Written on 21st February, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+             Cleanest my house has ever looked! </p>
+            </div>
+
+
+<div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/BWilliamson.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                  <p> <span class="testimonial-name">Becky Williamson</span><br>
+                  <span class="testimonial-date">Written on 17th February, 2025</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+              Had a deep clean prior to the fortnightly cleans and they did an amazing job, great communication, quick to respond to messages, reliable and on time. Couldn't recommend highly enough. We have an old house and we've never seen our shower so clean! I honetsly don't know how they did it. Looking forward to our regular cleans.</p>
+            </div>
+
+          </div>
+        </div>
+		
+			<!-- === SLIDE 4 === -->
+        <div class="carousel-item">
+          <div class="testimonial-wrapper">
+           
+  <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/RCasili.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                   <p> <span class="testimonial-name">Rowena Casilli</span><br>
+                  <span class="testimonial-date">Written on 16 March, 2024</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+              Fantastic in every way! My shower glass looks like new! Thank you ☺️ </p>
+            </div>
+
+
+
+
+
+
+		   <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/AFarugia.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                 <p> <span class="testimonial-name">Anita Farrugia</span><br>
+                  <span class="testimonial-date">Written on 17th January, 2024</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+             Definitely recommend Tailored Sweep Services, I have been having regular cleans since November and have not been disappointed.</p>
+            </div>
+
+          
+          </div>
+        </div>
+		
+		
+			<!-- === SLIDE 5 === -->
+        <div class="carousel-item">
+          <div class="testimonial-wrapper">
+            
+			  <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/MBower.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                  <p> <span class="testimonial-name">Michaela Bower</span><br>
+                  <span class="testimonial-date">Written on 15th January, 2024</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+              Would recommend Tailored Sweep Cleaning Services.
+Had the deep clean today and will be booking in for regular cleans.
+Thankyou so much - that’s one job ticked off my ever growing list!!</p>
+            </div>
+			
+			
+			
+			
+			<div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/FMac.jpg" alt="Client photo" class="testimonial-img">
+                <div>
+                 <p> <span class="testimonial-name">Fee Mac Coisdealbha</span><br>
+                  <span class="testimonial-date">Written on 19th August, 2023</span></p>
+                </div>
+              </div>
+              <p class="testimonial-text">
+             Absolutely amazing clean. Just love being in my clean home again. Thank you so much 5 ⭐️</p>
+            </div>
+
+           
+          </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+                    
+
+
+    <div class="full-width-container" id="full-width-container-2">
+        <div class="section-item-main">
+            <div class="main-section">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+                        <div class="full-width-container-text section-mid-item-contact">
+                            <div>
+                                <h2 class="section-title full-width-container-title">Request a Quote Today!</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                        <div class="full-width-container-btn">
+                            <div class="osc-btn">
+                                <div>
+                                    <button class="section-mid-item-btn section-mid-item-btn-white navbar-navigate-link" data-page="index.html" data-scroll="contact-us-section-item">Get a free quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hrr"></div>
+    
+	
+    <div id="faq-section-item-ext">
+
+        <div class="section-item-main" id="faq-section-item">
+            <div class="main-section">
+                <p class="section-heading">clear any doubts you have about our services</p>
+                <h3 class="section-title">Frequently Asked Questions</h3>
+
+            </div>
+        </div>
+
+<section id="faq-section">
+  <div class="faq-item parent-div" data-clicked="false" data-target="answer1">
+    <p class="faq-item-quest">How often should I get my house cleaned?</p>
+    <div class="faq-item-arrow">
+      <img src="contents/images/arrow-down.png" alt="Arrow" />
+    </div>
+  </div>
+  <div id="answer1" class="faq-answer" style="display:none;">
+    <p>That totally depends on what works best for you! Most of our clients go for a fortnightly clean, but we
+also offer weekly, monthly, or even one-time deep cleans if you just need a refresh. Got pets or kids?
+Weekly might suit you better. We’re happy to create a cleaning schedule that fits your lifestyle.</p>
+  </div>
+
+  <div class="faq-item parent-div" data-clicked="false" data-target="answer2">
+    <p class="faq-item-quest">Do I need to provide any cleaning supplies or equipment?</p>
+    <div class="faq-item-arrow">
+      <img src="contents/images/arrow-down.png" alt="Arrow" />
+    </div>
+  </div>
+  <div id="answer2" class="faq-answer" style="display:none;">
+    <p>Not at all — we've got you covered! We bring all our own professional cleaning products and
+equipment. You just sit back, relax, and enjoy your beautifully clean space. No need to lift a finger!
+                        </p>
+  </div>
+  
+  
+  
+  <div class="faq-item parent-div" data-clicked="false" data-target="answer3">
+    <p class="faq-item-quest">Can you tailor your services to what I need?</p>
+    <div class="faq-item-arrow">
+      <img src="contents/images/arrow-down.png" alt="Arrow" />
+    </div>
+  </div>
+  <div id="answer3" class="faq-answer" style="display:none;">
+    <p>Absolutely! Every home (and every person) is different, so we always adjust to suit your preferences. We
+usually start with a deep clean to get everything sparkling, then tweak things from there based on what
+you like best.
+                        </p>
+  </div>
+  
+  
+   <div class="faq-item parent-div" data-clicked="false" data-target="answer4">
+    <p class="faq-item-quest">Do you clean commercial properties too?</p>
+    <div class="faq-item-arrow">
+      <img src="contents/images/arrow-down.png" alt="Arrow" />
+    </div>
+  </div>
+  <div id="answer4" class="faq-answer" style="display:none;">
+    <p>We sure do! While we love helping out in homes, we’re just as happy making offices and commercial
+spaces shine. Let us know what kind of space you’ve got, and we’ll sort the rest.
+                        
+                        </p>
+  </div>
+  
+  
+  <div class="faq-item parent-div" data-clicked="false" data-target="answer5">
+    <p class="faq-item-quest">Which areas in Perth do you service?</p>
+    <div class="faq-item-arrow">
+      <img src="contents/images/arrow-down.png" alt="Arrow" />
+    </div>
+  </div>
+  <div id="answer5" class="faq-answer" style="display:none;">
+    <p>We're based right here in Perth and can travel all around the city and surrounding suburbs. If we can get
+there, we’ll clean it! Just reach out with your location, and we’ll let you know how we can help.
+                        
+                        
+                        </p>
+  </div>
+  
+  
+  
+</section>
+
+<br>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const faqItems = document.querySelectorAll(".parent-div");
+
+  faqItems.forEach(item => {
+    item.addEventListener("click", function() {
+      const targetId = this.dataset.target;
+      const answer = document.getElementById(targetId);
+      const clicked = this.dataset.clicked === "true";
+
+      // Close all answers first
+      faqItems.forEach(otherItem => {
+        const otherAnswerId = otherItem.dataset.target;
+        const otherAnswer = document.getElementById(otherAnswerId);
+        otherItem.classList.remove("faq-item-expanded");
+        otherAnswer.style.display = "none";
+        otherItem.dataset.clicked = "false";
+      });
+
+      // If it was not previously open, open it
+      if (!clicked) {
+        this.classList.add("faq-item-expanded");
+        answer.style.display = "block";
+        this.dataset.clicked = "true";
+      }
+    });
+  });
+});
+</script>
+
+
+
+
+    <!-- ventoras creation -->
+
+    <div class="hrr"></div>
+    <div class="section-item-main" id="contact-us-section-item">
+        <div class="main-section">
+            <p class="section-heading">Talk to Us About Your Cleaning Needs</p>
+
+
+            <div class="contact-section">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+                        <h3 class="section-title">Connect With Our Team</h3>
+                        <p class="section-desc">Get a free estimate tailored to your cleaning needs. Explore personalized, affordable solutions to enhance and maintain your spaces spotless.</p>
+
+
+                        <div class="contact-method-main contact-method-item">
+                            <div class="section-mid-item-contact">
+                                <img src="contents/images/messengericon.png" class="contact-method-main-icon-img">
+                                <h3>Contact us on Messenger</h3>
+                                <a href="https://www.facebook.com/tailoredsweep" target="_blank" class="projects-item-desc-btn osc-btn-container"></a>
+                            </div>
+
+                            <!-- <div class="contact-method-main-icon contact-method-icon">
+                                <div class="section-item-main">
+                                    <div class="section-mid-item-contact">
+                                        <img src="contents/images/telephone-call-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-method-main-desc contact-method-desc">
+                                <div class="section-item-main">
+                                    <div class="section-mid-item-contact">
+
+                                        <h2>+61 407 827 125</h2>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <p class="section-desc">Below are alternative contact methods for convenient communication and support.</p>
+
+                        <div class="contact-method-item">
+                            <div class="contact-method-icon">
+                                <div class="section-item-main">
+                                    <div class="section-mid-item-contact">
+                                        <img src="contents/images/emailicon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-desc">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:info@tailoredsweep.com">info@tailoredsweep.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item">
+                            <div class="contact-method-icon">
+                                <div class="section-item-main">
+                                    <div class="section-mid-item-contact">
+                                        <img style="width: 25px;" src="contents/images/facebook.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-desc">
+                                <h4>Facebook</h4>
+                                <p><a href="https://www.facebook.com/tailoredsweep" target="_blank">Visit our Facebook Page</a></p>
+                            </div>
+                        </div>
+
+                    <div class="contact-method-item">
+                            <div class="contact-method-icon">
+                                <div class="section-item-main">
+                                    <div class="section-mid-item-contact">
+                                        <img src="contents/images/mobile.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-desc">
+                                <h4>Mobile</h4>
+                                <p>0434 019 032</p>
+                            </div>
+                        </div> 
+                    </div>
+					
+
+
+
+
+
+<!-- Contact Form Section -->
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 contact-section-form">
+    <div class="section-item-main contact-section-form-div">
+        <h3 class="section-title">Contact us</h3>
+        <p class="section-desc">Not on Facebook Messenger? We can still work together! Contact us through this form.</p>
+        <p id="contact-section-success" style="display:none;">Your inquiry has been received! We’ll be in touch soon.</p>
+
+        <form class="contact-text-form">
+            <input type="text" name="name" maxlength="40" class="contact-text-input" placeholder="Name" id="name" required>
+            <input type="text" name="phonenumber" maxlength="20" id="phonenumber" class="contact-text-input" placeholder="Phone Number" required>
+            <input type="email" name="emailaddress" maxlength="324" id="emailaddress" class="contact-text-input" placeholder="Email Address" required>
+            <textarea name="message" id="message" maxlength="1000" class="contact-text-input contact-text-field" cols="30" placeholder="Your message" rows="10" required></textarea>
+            <p id="form-error" class="section-heading section-heading-small" style="display:none;">- complete all the fields</p>
+            <input id="submit-form" type="submit" class="contact-text-submit" value="Send message">
+        </form>
+    </div>
+</div>
+
+<!-- EmailJS SDK (New Version) -->
+<!-- EmailJS SDK (Non-module version for static sites) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialize EmailJS
+    emailjs.init("Cu9C_PLSwl02m3AzF"); // Replace with your Public Key
+
+    const form = document.querySelector(".contact-text-form");
+    const errorEl = document.querySelector("#form-error");
+    const submitBtn = document.querySelector("#submit-form");
+    const successEl = document.querySelector("#contact-section-success");
+
+    // ✅ Attach submit handler
+    form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Stop page reload
+
+        const name = document.querySelector("#name").value.trim();
+        const phone = document.querySelector("#phonenumber").value.trim();
+        const email = document.querySelector("#emailaddress").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        if (!name || !phone || !email || !message) {
+            const errorText = !name ? 'Please enter your name.' :
+                              !phone ? 'Please enter your phone number.' :
+                              !email ? 'Please enter your email address.' :
+                              'Please enter your message.';
+            errorEl.innerText = errorText;
+            errorEl.style.display = "block";
+            return;
+        }
+
+        errorEl.style.display = "none";
+        submitBtn.value = "Sending...";
+        submitBtn.disabled = true;
+
+        const templateParams = {
+            name: name,
+            phone: phone,
+            email: email,
+            message: message
+        };
+
+        emailjs.send("service_cevdgm8", "template_nr0ytnw", templateParams)
+        .then(function(response) {
+            console.log("SUCCESS!", response.status, response.text);
+            submitBtn.value = "Send message";
+            submitBtn.disabled = false;
+            form.reset();
+            form.style.display = "none"; 
+			successEl.style.display = "block";
+        })
+        .catch(function(error) {
+            console.error("FAILED...", error);
+            errorEl.innerText = "Failed to send message. Please try again later.";
+            errorEl.style.display = "block";
+            submitBtn.value = "Send message";
+            submitBtn.disabled = false;
+        });
+    });
+});
+</script>
+
+
+
+					
+
+
+
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-section-item">
+        <div class="hrr hrr-red"></div>
+        <div class="footer-main">
+            <div class="section-item-main">
+                <div class="footer-item-main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-8 footer-1-row-col-top">
+                                <img class="footer-logo" src="contents/images/logowithtextwhite.svg" alt="">
+                                <!-- <p class="ventoras-tagline">Crafting Beautiful Landscapes with Expert Care and Attention.</p> -->
+
+
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-sm-4">
+                                <div class="footer-social-media">
+                                    <p class="footer-social-media-title">Designed by Ventoras</p>
+                                    <!-- <div class="social-media-icons">
+                                        <a href="http://www.google.com"><img src="contents/images/instagram.png" alt=""></a>
+                                        <a href="http://www.d.com"><img src="contents/images/facebook.png" alt=""></a>
+                                        <a href="http://www.gooddgle.com"><img src="contents/images/twitter.png" alt=""></a>
+                                    </div> -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row footer-2-row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="made-in-sl">
+                                    <p class="section-desc">Designed by <a href="www.ventoras.com">Ventoras</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- <script src="owlcarousel/jquery-3.7.1.min.js"></script> -->
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
+
+
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="projects/sydneybuilds.com/js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+
+
+</html>
